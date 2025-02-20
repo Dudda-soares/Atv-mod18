@@ -29,24 +29,24 @@ document.addEventListener('DOMContentLoaded', function(){
                 if(idade >= 0 && idade < 10 ){
                     //criança
                     genero = 'Criança'
-                    criarImg.setAttribute('src', '/src/img/menino.jpg')
+                    criarImg.setAttribute('src', './img/menino.jpg')
                 } else if ( idade < 21 ){
                     //jovem
                     genero = 'Jovem'
 
-                    criarImg.setAttribute('src', '/src/img/jovemM.jpg')
+                    criarImg.setAttribute('src', './img/jovemM.jpg')
                     
                 } else if(idade < 50 ){
                     //adulto
                     genero = 'Adulto'
 
-                    criarImg.setAttribute('src', '/src/img/adultoM.jpg')
+                    criarImg.setAttribute('src', './img/adultoM.jpg')
                     
                 }else{
                     //idoso
                     genero = 'Idoso'
 
-                    criarImg.setAttribute('src', '/src/img/idoso.jpg')
+                    criarImg.setAttribute('src', './img/idoso.jpg')
     
                 }
             } else if(rSexo[1].checked){
@@ -54,25 +54,25 @@ document.addEventListener('DOMContentLoaded', function(){
                 if(idade >= 0 && idade < 10){
                     genero = 'Criança'
                     
-                    criarImg.setAttribute('src', '/src/img/menina.jpg')
+                    criarImg.setAttribute('src', './img/menina.jpg')
     
                 } else if (idade < 21){
                     //jovem
                     genero = 'Jovem'
                     
-                    criarImg.setAttribute('src', '/src/img/jovemf.jpg')
+                    criarImg.setAttribute('src', './img/jovemf.jpg')
     
                 } else if (idade < 50 ){
                     //adulto
                     genero = 'Adulta'
 
-                    criarImg.setAttribute('src', '/src/img/adultoM.png')
+                    criarImg.setAttribute('src', './img/adultoM.png')
     
                 }else {
                     //idoso
                     genero = 'Idosa'
 
-                    criarImg.setAttribute('src', '/src/img/idosa.jpg')
+                    criarImg.setAttribute('src', './img/idosa.jpg')
     
                 }
                 
