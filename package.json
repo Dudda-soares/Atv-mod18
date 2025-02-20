@@ -19,6 +19,7 @@
     "grunt-replace": "^2.0.2"
   },
   "dependencies": {
+    "grunt-contrib-imagemin": "^4.0.0",
     "grunt-contrib-uglify": "^5.2.2"
   }
 }
