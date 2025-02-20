@@ -30,7 +30,7 @@ module.exports = function(grunt){
 
             },
             imagemin :{
-                files : ['../src/img/**/*'],
+                files : ['src/img/**/*'],
                 tasks: ['imagemin']
             }
             
@@ -101,14 +101,16 @@ module.exports = function(grunt){
                 }
             }
         },
-        imagemin :{
-            dynamic: {
-                files: [{
-                    expand: true,
-                    cwd :'../img/',
-                    src: ['../src/img/**/*.{png,jpg,gif}'],
-                    dest: 'dist/img/'
-                }]
+        imagemin: {
+            target: {
+                files: [
+                    {
+                        expand: true, // Permite que você use curingas
+                        cwd: 'src/img/', // Diretório de origem
+                        src: ['**/*.{jpg,jpeg,png,gif,ico}'], // Tipos de arquivos que serão otimizados
+                        dest: 'dist/img/' // Diretório de destino
+                    }
+                ]
             }
         }
 
